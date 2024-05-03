@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Kdam+Thmor+Pro&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #161b20;
+    font-family: "Teko", sans-serif;
+    font-family: "Pathway Extreme", sans-serif;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* menu active */
+.active,
+.btn:hover {
+    color: #fefae0;
+}
+
+.box .box-item {
+    display: none;
+}
+
+.box .active{
+    display: block;
+    animation: slide-in  1s ease forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-5%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* ======================= */
+.sub {
+    animation: ease slideIn 0.8s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0.25;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
