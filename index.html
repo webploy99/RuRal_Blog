@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <section class="h-svh">
+    <section class="">
         <!-- <div><img src="./images/top-bg3.jpg" class="object-cover w-full"></div> -->
         <div class="h-auto w-full bg-[#14213d] flex flex-col justify-center items-center">
             <img src="./images/palm-icon.png" class="w-14 p-2">
@@ -39,19 +39,61 @@
         </div>
     
         <!-- main -->
-        <section class="max-w-3xl m-auto bg-no-repeat text-white text-md font-light tracking-wide overflow-hidden sm:mt-3 shadow-inner shadow-gray-700/100">
+        <section class="max-w-3xl m-auto relative bg-no-repeat text-white text-md font-light tracking-wide overflow-hidden sm:mt-3 shadow-inner shadow-gray-700/100">
             <!-- rural -->
-            <div class="box-item active bg-[#fefae0] text-gray-800">
+            <div class="box-item active bg-[#fefae0] text-gray-800 overflow-hidden">
                 <div class="owl-carousel">
                     <div class="text-gray-800">
-                        <div><img src="./images/rural.jpg"></div>
+                        <div><img src="./images/writer.jpg"></div>
                         <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO RURAL</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+                            <div class="py-2">
+                                <span class="text-3xl px-4 md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO RURAL</span>
+                                <p class=" mt-5 px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+
+                                <span class="showPage block text-center mt-5 p-1 text-[#18c5a3] font-semibold cursor-pointer">CONTINUE...</span>
+                                
+                                <div class="absolute top-0 w-full z-40">
+                                    <div class="pageContent hidden flex flex-col bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
+                                        <div class="flex justify-center items-center w-full mt-1">
+                                            <button class="text-2xl p-1 mr-10 z-10">
+                                                <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
+                                            </button>
+                                        </div>
+
+                                        <div class="realative">
+                                            <img src="./images/rural.jpg">
+                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+
+
+                                            <!-- second page -->
+                                            <div class="showPage flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
+                                                <button class="absolute top-1 p-1">
+                                                    <ion-icon class="text-2xl ml-10 hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-forward-outline"></ion-icon>
+                                                </button>
+                                            </div>
+
+                                            <div class="absolute top-0 w-full z-30">
+                                                <div class="pageContent hidden flex flex-col gap-3 bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
+                                                    <div class="mt-10">
+                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                    </div>
+
+                                                    <div class=" flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
+                                                        <button class="absolute top-0 p-1">
+                                                            <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
         
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                <div class="max-w-3xl relative m-auto mt-5 mx-4 flex justify-between items-center overflow-hidden">
                                     <span class="text-sm">SAVED AS: RURAL</span>
                                     <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
                                     
@@ -295,7 +337,7 @@
                             <div class="px-4 py-2">
                                 <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO LIFE</span>
                                 <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="rural.html">CONTINUE...</a></span>
         
                                 <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
                                     <span class="text-sm">SAVED AS: LIFE</span>
@@ -314,10 +356,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
-    
+ 
     </section>
+    <!-- OwlCarousel -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 

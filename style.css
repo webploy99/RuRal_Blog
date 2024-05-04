@@ -27,12 +27,12 @@ body {
 
 .active{
     display: block;
-    animation: slide-in  1s ease forwards;
+    /* animation: slide-in  0.3s ease 1 forwards; */
 }
 
 @keyframes slide-in {
     from {
-        transform: translateY(-5%);
+        transform: translateY(-1%);
         opacity: 0.5;
     }
 
@@ -51,12 +51,30 @@ body {
 
 @keyframes slideIn {
     from {
-        transform: translateX(100%);
+        transform: translateY(28%);
         opacity: 0.25;
     }
 
     to {
-        transform: translateX(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.pageContent {
+    animation: ease slideIn 0.5s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-28%);
+        opacity: 0.25;
+    }
+
+    to {
+        transform: translateY(0%);
         opacity: 1;
     }
 }
