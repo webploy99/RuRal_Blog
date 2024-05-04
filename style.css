@@ -21,11 +21,11 @@ body {
     color: #fefae0;
 }
 
-.box .box-item {
+.box-item {
     display: none;
 }
 
-.box .active{
+.active{
     display: block;
     animation: slide-in  1s ease forwards;
 }
@@ -44,7 +44,7 @@ body {
 
 /* ======================= */
 .sub {
-    animation: ease slideIn 0.8s;
+    animation: ease slideIn 0.5s;
     animation-timing-function: linear;
 }
 
