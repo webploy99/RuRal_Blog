@@ -10,8 +10,10 @@
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- OwlCarousel slider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body>
@@ -42,94 +44,96 @@
         <section class="max-w-3xl m-auto relative bg-no-repeat text-white text-md font-light tracking-wide overflow-hidden sm:mt-3 shadow-inner shadow-gray-700/100">
             <!-- rural -->
             <div class="box-item active bg-[#fefae0] text-gray-800 overflow-hidden">
-                <div class="owl-carousel">
-                    <div class="text-gray-800">
-                        <div><img src="./images/writer.jpg"></div>
-                        <div class="mt-5">
-                            <div class="py-2">
-                                <span class="text-3xl px-4 md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO RURAL</span>
-                                <p class=" mt-5 px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-
-                                <span class="showPage block text-center mt-5 p-1 text-[#18c5a3] font-semibold cursor-pointer">CONTINUE...</span>
-                                
-                                <div class="absolute top-0 w-full z-40">
-                                    <div class="pageContent hidden flex flex-col bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
-                                        <div class="flex justify-center items-center w-full mt-1">
-                                            <button class="text-2xl p-1 mr-10 z-10">
-                                                <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
-                                            </button>
-                                        </div>
-
-                                        <div class="realative">
-                                            <img src="./images/rural.jpg">
-                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-
-
-                                            <!-- second page -->
-                                            <div class="showPage flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
-                                                <button class="absolute top-1 p-1">
-                                                    <ion-icon class="text-2xl ml-10 hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-forward-outline"></ion-icon>
+                <div class="swiper cubeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/writer.jpg"></div>
+                            <div class="mt-5">
+                                <div class="py-2">
+                                    <span class="text-3xl px-4 md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO RURAL</span>
+                                    <p class=" mt-5 px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+    
+                                    <span class="showPage block text-center mt-5 p-1 text-[#18c5a3] font-semibold cursor-pointer">CONTINUE...</span>
+                                    
+                                    <div class="absolute top-0 w-full z-40">
+                                        <div class="pageContent hidden flex flex-col bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
+                                            <div class="flex justify-center items-center w-full mt-1">
+                                                <button class="text-2xl p-1 mr-10 z-10">
+                                                    <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
                                                 </button>
                                             </div>
-
-                                            <div class="absolute top-0 w-full z-30">
-                                                <div class="pageContent hidden flex flex-col gap-3 bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
-                                                    <div class="mt-10">
-                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                    </div>
-
-                                                    <div class=" flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
-                                                        <button class="absolute top-0 p-1">
-                                                            <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
-                                                        </button>
+    
+                                            <div class="realative">
+                                                <img src="./images/rural.jpg">
+                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+    
+    
+                                                <!-- second page -->
+                                                <div class="showPage flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
+                                                    <button class="absolute top-1 p-1">
+                                                        <ion-icon class="text-2xl ml-10 hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-forward-outline"></ion-icon>
+                                                    </button>
+                                                </div>
+    
+                                                <div class="absolute top-0 w-full z-30">
+                                                    <div class="pageContent hidden flex flex-col gap-3 bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
+                                                        <div class="mt-10">
+                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                        </div>
+    
+                                                        <div class=" flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
+                                                            <button class="absolute bottom-0 p-1">
+                                                                <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 mx-4 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: RURAL</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Rural content.</p>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 mx-4 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: RURAL</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Rural content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 28 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 28 2018_BY REAM</span>
                         </div>
-                    </div>
-                    <!-- ... -->
-                    <div class="text-gray-800">
-                        <div><img src="./images/life.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO LIFE</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: LIFE</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Rural content.</p>
+                        <!-- ... -->
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/life.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO LIFE</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: LIFE</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Rural content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 28 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 28 2018_BY REAM</span>
                         </div>
                     </div>
                 </div>
@@ -137,52 +141,54 @@
             
             <!-- motivation -->
             <div class="box-item bg-[#fefae0] text-gray-800">
-                <div class="owl-carousel">
-                    <div class="text-gray-800">
-                        <div><img src="./images/motivation.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO MOTIVATION</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: MOTIVATION</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Motivation content.</p>
+                <div class="swiper cubeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/motivation.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO MOTIVATION</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: MOTIVATION</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Motivation content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 29 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 29 2018_BY REAM</span>
                         </div>
-                    </div>
-                    <!-- ... -->
-                    <div class="text-gray-800">
-                        <div><img src="./images/rural.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO RURAL</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: RURAL</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Motivation content.</p>
+                        <!-- ... -->
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/rural.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO RURAL</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: RURAL</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Motivation content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 29 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 29 2018_BY REAM</span>
                         </div>
                     </div>
                 </div>
@@ -190,52 +196,54 @@
 
             <!-- writer -->
             <div class="box-item bg-[#fefae0] text-gray-800">
-                <div class="owl-carousel">
-                    <div class="text-gray-800">
-                        <div><img src="./images/writer.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO WRITER</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: WRITER</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Writer content.</p>
+                <div class="swiper cubeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/writer.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO WRITER</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: WRITER</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Writer content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 30 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 30 2018_BY REAM</span>
                         </div>
-                    </div>
-                    <!-- ... -->
-                    <div class="text-gray-800">
-                        <div><img src="./images/poem.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO POEM</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: POEM</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Writer content.</p>
+                        <!-- ... -->
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/poem.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO POEM</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: POEM</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Writer content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 30 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">April 30 2018_BY REAM</span>
                         </div>
                     </div>
                 </div>
@@ -243,28 +251,54 @@
 
             <!-- poem -->
             <div class="box-item bg-[#fefae0] text-gray-800">
-                <div class="owl-carousel">
-                    <div class="text-gray-800">
-                        <div><img src="./images/poem.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO POEM</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: POEM</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Poem content.</p>
+                <div class="swiper cubeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/poem.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO POEM</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: POEM</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Poem content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
+                        </div>
+                        <!-- ... -->
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/poem.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO POEM</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: POEM</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Poem content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -272,28 +306,54 @@
 
             <!-- blog -->
             <div class="box-item bg-[#fefae0] text-gray-800">
-                <div class="owl-carousel">
-                    <div class="text-gray-800">
-                        <div><img src="./images/blog.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO BLOG</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: BLOG</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Blog content.</p>
+                <div class="swiper cubeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/blog.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO BLOG</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: BLOG</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Blog content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
+                        </div>
+                        <!-- ... -->
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/blog.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO BLOG</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: BLOG</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Blog content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -301,28 +361,54 @@
 
             <!-- reading -->
             <div class="box-item bg-[#fefae0] text-gray-800">
-                <div class="owl-carousel">
-                    <div class="text-gray-800">
-                        <div><img src="./images/reading.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO READING</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: READING</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Reading content.</p>
+                <div class="swiper cubeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/reading.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO READING</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: READING</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Reading content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
+                        </div>
+                        <!-- ... -->
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/reading.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO READING</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: READING</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Reading content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 01 2018_BY REAM</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -330,28 +416,54 @@
 
             <!-- life -->
             <div class="box-item bg-[#fefae0] text-gray-800">
-                <div class="owl-carousel">
-                    <div class="text-gray-800">
-                        <div><img src="./images/life.jpg"></div>
-                        <div class="mt-5">
-                            <div class="px-4 py-2">
-                                <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO LIFE</span>
-                                <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-                                <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="rural.html">CONTINUE...</a></span>
-        
-                                <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
-                                    <span class="text-sm">SAVED AS: LIFE</span>
-                                    <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
-                                    
-                                    <div class="absolute top-0 w-full">
-                                        <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
-                                            <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
-                                            <p class="text-sm">This is some Life content.</p>
+                <div class="swiper cubeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/life.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO LIFE</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="rural.html">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: LIFE</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Life content.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 03 2018_BY REAM</span>
                             </div>
-                            <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 03 2018_BY REAM</span>
+                        </div>
+                        <!-- ... -->
+                        <div class="swiper-slide text-gray-800">
+                            <div><img src="./images/life.jpg"></div>
+                            <div class="mt-5">
+                                <div class="px-4 py-2">
+                                    <span class="text-3xl md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO LIFE</span>
+                                    <p class=" mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
+                                    <span class="block text-center mt-5 text-[#18c5a3] font-semibold"><a href="rural.html">CONTINUE...</a></span>
+            
+                                    <div class="max-w-3xl relative m-auto mt-5 flex justify-between items-center overflow-hidden">
+                                        <span class="text-sm">SAVED AS: LIFE</span>
+                                        <button class="showButton text-2xl flex p-1 "><ion-icon name="arrow-undo-circle-outline"></ion-icon></button>
+                                        
+                                        <div class="absolute top-0 w-full">
+                                            <div class="content hidden sub flex gap-3 justify-center items-center bg-gray-400 h-full p-1 duration-500">
+                                                <button class="absolute top-0 right-0 text-2xl p-1"><ion-icon class="hideButton" name="close-circle-outline"></ion-icon></button>
+                                                <p class="text-sm">This is some Life content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-xs sm:text-sm text-[#18c5a3] block text-center mt-3 py-2.5 border-t border-orange-100">May 03 2018_BY REAM</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -359,9 +471,24 @@
         </section>
  
     </section>
-    <!-- OwlCarousel -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        var swiper = new Swiper(".cubeSwiper", {
+            loop: true,
+            effect: "cube",
+            grabCursor: true,
+            pauseOnMouseEnter: true,
+            cubeEffect: {
+                shadow: false,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+    </script>
 
     <script src="./script.js"></script>
 </body>
