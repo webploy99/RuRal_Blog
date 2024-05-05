@@ -71,20 +71,3 @@
             console.log(rural)
         }
     })
-
-    // owlCarousel slide
-    $(".owl-carousel").owlCarousel({
-        loop: true,
-        responsiveClass: true,
-        items: 1,
-        margin: 10,
-        cursor: "pointer"
-        // nav: true,
-        // dots: true,
-    //   responsive: {
-    //     20: {
-    //       items: 1.1,
-    //       nav: false,
-    //     },
-    //   },
-    });
