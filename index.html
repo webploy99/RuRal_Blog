@@ -17,10 +17,10 @@
 
 </head>
 <body>
-    <section class="h-[768px]">
+    <section class="h-full">
         <!-- <div><img src="./images/top-bg3.jpg" class="object-cover w-full"></div> -->
         <div class="h-auto w-full bg-[#14213d] flex flex-col justify-center items-center">
-            <a href="index.html"><img src="./images/palm-icon.png" class="w-14 p-2"></a>
+            <a href="index.html"><img src="./images/logo2.png" class="w-16 p-2"></a>
             <div class="w-full hidden">
                 <div class="max-w-3xl m-auto flex justify-between gap-5 text-[#18c5a3] mx-3 *:text-sm font-semibold *:underline">
                     <span>M.PERSONAL</span>
@@ -28,8 +28,8 @@
                 </div>
             </div>
         </div>
-        <div class="shadow w-full h-12 sm:h-14 tracking-wider bg-[#18c5a3] flex justify-center items-center">
-            <div id="myActive" class="rural scroll flex gap-1 *:px-2.5 text-md mt-0.5 *:py-1.5 *:duration-500 scrolling-auto overflow-auto scroll-smooth *:cursor-pointer">
+        <div class="shadow w-full h-12 sm:h-14 tracking-wider bg-[#18c5a3] bg-gradient-to-r from-yellow-500 via-orange-200 to-yellow-500 flex justify-center items-center">
+            <div id="myActive" class="rural scroll flex gap-1 *:px-2.5 text-gray-800 text-md font-semibold mt-0.5 *:py-1.5 *:duration-500 scrolling-auto overflow-auto scroll-smooth *:cursor-pointer">
                 <span class="btn rural-item active hover:text-gray-50">RURAL</span>
                 <span class="btn rural-item hover:text-gray-50">MOTIVATION</span>
                 <span class="btn rural-item hover:text-gray-50">WRITER</span>
@@ -41,54 +41,60 @@
         </div>
     
         <!-- main -->
-        <section class="max-w-3xl m-auto relative bg-no-repeat text-white text-md font-light tracking-wide overflow-hidden sm:mt-3 shadow-inner shadow-gray-700/100">
+        <section class="max-w-3xl m-auto text-white text-md font-light tracking-wide overflow-hidden sm:mt-3 shadow-inner shadow-gray-700/100">
             <!-- rural -->
             <div class="box-item active bg-[#fefae0] text-gray-800 overflow-hidden">
                 <div class="swiper cubeSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide relative">
                             <div><img src="./images/writer.jpg"></div>
                             <div class="mt-5">
                                 <div class="py-2">
                                     <span class="text-3xl px-4 md:text-5xl font-bold text-[#18c5a3] block text-center">I WENT TO RURAL</span>
                                     <p class=" mt-5 px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at risus at lacus laoreet mollis sed id elit. Integer bibendum lobortis velit, eleifend commodo dui facilisis nec. Aliquam mi sapien, ultrices a ultrices non, sodales ut diam. Fusce semper risus eu magna placerat pulvinar.</p>
-    
-                                    <span class="showPage block text-center mt-5 p-1 text-[#18c5a3] font-semibold cursor-pointer">CONTINUE...</span>
                                     
-                                    <div class="absolute top-0 w-full z-40">
-                                        <div class="pageContent hidden flex flex-col bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
-                                            <div class="flex justify-center items-center w-full mt-1">
-                                                <button class="text-2xl p-1 mr-10 z-10">
-                                                    <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
-                                                </button>
-                                            </div>
-    
-                                            <div class="realative">
-                                                <img src="./images/rural.jpg">
-                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-    
-    
-                                                <!-- second page -->
-                                                <div class="showPage flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
-                                                    <button class="absolute top-1 p-1">
-                                                        <ion-icon class="text-2xl ml-10 hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-forward-outline"></ion-icon>
+                                    <!-- CONTINUE -->
+                                    <div>
+                                        <!-- click show first page -->
+                                        <span class="showPage block text-center mt-5 p-1 text-[#18c5a3] font-semibold cursor-pointer">CONTINUE...</span>
+                                        <div class="absolute top-0 h-full z-40">
+                                            <div class="pageContent hidden w-full h-full flex flex-col bg-[#fefae0] duration-500 overflow-hidden z-50">
+                                                <!-- hide first page icon -->
+                                                <div class="w-full flex justify-center items-center">
+                                                    <button class="absolute bottom-0 text-2xl mr-10 z-10 text-gray-600">
+                                                        <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
                                                     </button>
                                                 </div>
-    
-                                                <div class="absolute top-0 w-full z-30">
-                                                    <div class="pageContent hidden flex flex-col gap-3 bg-[#fefae0] h-screen duration-500 overflow-hidden z-50">
-                                                        <div class="mt-10">
-                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                            <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
-                                                        </div>
-    
-                                                        <div class=" flex justify-center items-center w-full text-sm font-semibold text-gray800 ">
-                                                            <button class="absolute bottom-36 p-1">
-                                                                <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
-                                                            </button>
+        
+                                                <div class="realative">
+                                                    <div>
+                                                        <img src="./images/rural.jpg">
+                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                        <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                    </div>
+
+                                                    <!-- click show second page icon -->
+                                                    <div class="showPage flex justify-center items-center w-full">
+                                                        <button class="absolute bottom-0 ml-10 z-10 text-gray-600">
+                                                            <ion-icon class="text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-forward-outline"></ion-icon>
+                                                        </button>
+                                                    </div>
+        
+                                                    <div class="absolute top-0 h-full z-30">
+                                                        <div class="pageContent hidden h-full flex flex-col gap-3 bg-[#fefae0] duration-500 overflow-hidden z-50">
+                                                            <div class="mt-5">
+                                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                                <p class="text-sm p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus quibusdam impedit ad hic amet iusto esse omnis, excepturi possimus obcaecati aperiam laudantium earum, sit, atque commodi magni illo dicta?</p>
+                                                            </div>
+                                                            
+                                                            <!-- hide second page icon -->
+                                                            <div class=" flex justify-center items-center w-full text-sm font-semibold">
+                                                                <button class="absolute bottom-0 p-1 text-gray-600">
+                                                                    <ion-icon class="hidePage text-2xl hover:bg-yellow-200 rounded-full p-1 duration-300" name="arrow-back-outline"></ion-icon>
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
