@@ -82,3 +82,10 @@ p {
         opacity: 1;
     }
 }
+
+.text-span {
+ background: url(./images/casino.png);
+ -webkit-background-clip: text-span;
+ background-clip: text-span;
+ color: transparent;
+}
