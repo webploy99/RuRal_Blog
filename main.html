@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ream</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- tailwindcss script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <section class="fixed top-0 w-full">
+        <!-- <div><img src="./images/top-bg3.jpg" class="object-cover w-full"></div> -->
+        <div class="h-auto w-full bg-[#14213d] flex flex-col justify-center items-center">
+            <a href="index.html"><img src="./images/logo2.png" class="w-16 p-2"></a>
+            <div class="w-full hidden">
+                <div class="max-w-3xl m-auto flex justify-between gap-5 text-[#18c5a3] mx-3 *:text-sm font-semibold *:underline">
+                    <span>M.PERSONAL</span>
+                    <span>JOIN</span>
+                </div>
+            </div>
+        </div>
+        <div class="shadow w-full h-12 sm:h-14 tracking-wider bg-[#18c5a3] bg-gradient-to-r from-yellow-500 via-orange-200 to-yellow-500 flex justify-center items-center">
+            <div id="myActive" class="rural scroll flex gap-1 *:px-2.5 text-gray-800 text-md font-semibold mt-0.5 *:py-1.5 *:duration-500 scrolling-auto overflow-auto scroll-smooth *:cursor-pointer">
+                <span class="btn rural-item active hover:text-gray-50">RURAL</span>
+                <span class="btn rural-item hover:text-gray-50">MOTIVATION</span>
+                <span class="btn rural-item hover:text-gray-50">WRITER</span>
+                <span class="btn rural-item hover:text-gray-50">POEM</span>
+                <span class="btn rural-item hover:text-gray-50">BLOG</span>
+                <span class="btn rural-item hover:text-gray-50">READING</span>
+                <span class="btn rural-item hover:text-gray-50">LIFE</span>
+            </div>
+        </div>
+    
+        <!-- main -->
+        <section class="max-w-3xl m-auto text-white text-md font-normal tracking-wide overflow-hidden sm:mt-3 shadow-inner shadow-gray-700/100">
+            <div class="border h-[800px] flex flex-col">
+                <div class="max-h-96 shrink-0 overflow-hidden"><img src="./images/life.jpg"></div>
+                <div class="bg-gray-600">
+                    <div class="bg-yellow-600 flex flex-col justify-end items-end h-full">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium consectetur id labore, totam facilis quae. Incidunt reprehenderit obcaecati alias tempore quia, expedita omnis nihil sequi eaque, temporibus sed sunt cupiditate.</span>
+                    </div>
+
+                    <div class="bg-yellow-800 flex flex-col justify-end items-end h-full">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium consectetur id labore, totam facilis quae. Incidunt reprehenderit obcaecati alias tempore quia, expedita omnis nihil sequi eaque, temporibus sed sunt cupiditate.</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <script>
+        var swiper = new Swiper(".cubeSwiper", {
+            loop: true,
+            effect: "cube",
+            grabCursor: true,
+            pauseOnMouseEnter: true,
+            cubeEffect: {
+                shadow: false,
+                slideShadows: false,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
