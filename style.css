@@ -1,4 +1,6 @@
+/* pathway font */
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Kdam+Thmor+Pro&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* hanuman font */
 @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
 * {
     margin: 0;
@@ -16,11 +18,17 @@ body {
     height: 79vh !important;
 }
 
-
-p {
-    font-family: "Hanuman", serif;
+/* font change */
+.english {
+    font-family: "Pathway Extreme", sans-serif;
 }
 
+.khmer {
+    font-family: "Hanuman", serif;
+}
+/* end font change */
+
+/* scroll bar none */
 .scroll::-webkit-scrollbar {
     display: none;
 }
@@ -37,12 +45,12 @@ p {
 
 .active{
     display: block;
-    /* animation: slide-in  0.3s ease 1 forwards; */
+    animation: slide-in  0.3s ease 1 forwards;
 }
 
 @keyframes slide-in {
     from {
-        transform: translateY(-1%);
+        transform: translateY(-5%);
         opacity: 0.5;
     }
 

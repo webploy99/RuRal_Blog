@@ -71,3 +71,28 @@
             console.log(rural)
         }
     })
+
+    // function change font
+
+    function isKhmer(text) {
+      var khmerRegex = new RegExp("[\u1780-\u17FF]+");
+      return khmerRegex.test(text);
+    }
+
+    function changeFont() {
+      var textElements = document.querySelectorAll("span, p");
+      textElements.forEach(function (textElement) {
+        var text = textElement.innerText;
+        if (isKhmer(text)) {
+          // If Khmer characters detected, apply font B
+          textElement.classList.add("khmer");
+          textElement.classList.remove("english");
+        } else {
+          // If not Khmer, apply font A
+          textElement.classList.add("english");
+          textElement.classList.remove("khmer");
+        }
+      });
+    }
+    
+    changeFont();
