@@ -11,6 +11,12 @@ body {
     font-family: "Teko", sans-serif;
     font-family: "Pathway Extreme", sans-serif;
 }
+
+.swiper-slide {
+    height: 79vh !important;
+}
+
+
 p {
     font-family: "Hanuman", serif;
 }
